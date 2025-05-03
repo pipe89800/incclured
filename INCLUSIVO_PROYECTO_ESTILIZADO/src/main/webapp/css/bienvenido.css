@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa; /* Fondo muy claro */
+  display: flex;
+  min-height: 100vh;
+  animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sidebar {
+  background-color: #343a40; /* Gris oscuro */
+  color: white;
+  width: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #dee2e6; /* Borde derecho sutil */
+}
+
+.menu-icon {
+  font-size: 2em;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Transición para la animación */
+}
+
+.menu-icon:hover {
+  transform: rotate(180deg); /* Rotación al pasar el mouse */
+}
+
+.dropdown-menu {
+  background-color: #495057; /* Gris un poco más claro */
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin-top: 10px;
+}
+
+.sidebar.active .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555b62;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 1px solid #e0e0e0; /* Borde ligero */
+}
+
+.header h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.progress-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.progress-box {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 25px;
+  width: 250px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones */
+}
+
+.progress-box:hover {
+  transform: translateY(-5px); /* Ligero movimiento al pasar el mouse */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.add-course-button {
+  background-color: #28a745; /* Verde más moderno */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Hacerlo circular */
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  cursor: pointer;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.add-course-button:hover {
+  background-color: #218838; /* Verde más oscuro al pasar el mouse */
+  transform: scale(1.1); /* Ligeramente más grande al pasar el mouse */
+}

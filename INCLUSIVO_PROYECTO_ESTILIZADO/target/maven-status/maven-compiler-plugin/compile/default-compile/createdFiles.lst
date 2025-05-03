@@ -1,0 +1,4 @@
+com\proyecto\inclusivo\DatabaseConnection.class
+com\proyecto\inclusivo\RegistroServlet.class
+com\proyecto\inclusivo\LoginServlet.class
+com\proyecto\inclusivo\BienvenidaServlet.class

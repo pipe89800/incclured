@@ -1,0 +1,173 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #e0c3fc, 
+  #8ec5fc); /* Degradado morado/azul claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.login-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
+
+.login-container .tagline {
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-size: 1em;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  color: #495057;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  width: calc(100% - 22px);
+  padding: 12px; /* Aumentar un poco el padding vertical */
+  border: 1px solid #ced4da;
+  border-radius: 8px; /* Más redondeado */
+  font-size: 1em;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input-group input[type="email"]:focus,
+.input-group input[type="password"]:focus {
+  border-color: #6c63ff; /* Morado más intenso */
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.options .forgot-password {
+  color: #6c63ff; /* Morado más consistente */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.options .forgot-password:hover {
+  color: #5550cc;
+}
+
+.options .remember-me {
+  display: flex;
+  align-items: center;
+  color: #495057;
+}
+
+.options .remember-me input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.login-button {
+  background-color: #6c63ff; /* Morado más intenso */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Mantener redondeado */
+  padding: 14px 20px; /* Aumentar un poco el padding vertical */
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #5550cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.or-separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #dee2e6;
+}
+
+.or-separator span {
+  padding: 0 15px;
+}
+
+.google-login {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Añadir una sombra sutil */
+}
+
+.google-login img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.google-login:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir una sombra al pasar el mouse */
+}
+
+.signup-link {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #495057;
+}
+
+.signup-link a {
+  color: #6c63ff; /* Morado más consistente */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.signup-link a:hover {
+  color: #5550cc;
+}

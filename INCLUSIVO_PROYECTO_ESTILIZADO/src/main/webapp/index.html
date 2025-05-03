@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css"> <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bienvenid@ </h1>
+        <p class="tagline">Construye tu futuro facilmente con nuestros niveles de aprendizaje.</p>
+
+        <form action="login" method="post" class="login-form">
+            <div class="input-group">
+                <label for="correo">Email</label>
+                <input type="email" id="correo" name="correo" placeholder="alex.jordan@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="********" required>
+            </div>
+
+            <div class="options">
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <label class="remember-me">
+                    <input type="checkbox" name="remember">
+                    Recordar mis datos
+                </label>
+            </div>
+
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+
+        <div class="or-separator">
+            <hr>
+            <span>O</span>
+            <hr>
+        </div>
+
+        <button class="google-login">
+            <img src="imagenes/gmail.png" alt="Continuar con Google">
+            Continuar con Google
+        </button>
+
+        <p class="signup-link">¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+    </div>
+</body>
+</html>
